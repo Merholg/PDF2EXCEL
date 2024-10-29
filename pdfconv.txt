@@ -1,0 +1,25 @@
+Convert PDF files to Excel files using Python
+
+pip install pdfplumber pandas openpyxl
+
+pdfplumber
+ort pandas pd
+
+(pdf_file, excel_file):
+
+th pdfplumber. (pdf_file) pdf:
+all_tables = []
+
+* page in pdf.p
+tables = page. 0)
+r table tables:
+table:
+df = pd. z (table)
+all_tables. end (df)
+all_tables:
+all_tables.append(pd.Dat: e([["No tables found"]]))
+pd. > (excel_file, engine="openpyxl"') writer:
+* idx, df in enumerate(all_tables):
+df. (writer, sheet_name=f'Sheet{idx+1}', index=
+
+pdf_to_excel(‘'clcodingpdff.pdf', 'clcoding.xlsx")
